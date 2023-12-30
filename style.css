@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --black: #000;
+  --orange: #ff9500;
+  --orange-dark: #ff7b00;
+  --white: #fff;
+}
+
+.hide {
+  display: none;
+}
+
+
+body {
+  background: linear-gradient(45deg, #190361, #bb00ff);
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+  }
+
+main {
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  padding: 4.8rem 6.4rem 6.4rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+  width: 25.8rem;
+  color: #34355b;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1.4rem;
+}
+
+.instruction {
+  color: #34355b;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+ .cookie {
+  cursor: pointer;
+} 
+
+.cookie:hover {
+  transform: scale(1.1);
+} 
+
+
+/* screenTwo */
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.7rem;
+}
+
+.card {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  gap: 10px;
+  background: #e4edf1;
+  box-shadow: 0.2rem 0.2rem 0.2rem 0 rgba(85, 85, 85, 0.5);
+}
+
+.card h1 {
+  margin: 0;
+  width: 29.7rem;
+  color: #34355b;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.luck {
+  width: 27.3rem;
+  color: var(--black);
+  text-align: center;
+  font-family: Dancing Script;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.broken-cookie {
+  margin: 4.3rem 0 4.2rem;
+}
+
+button {
+  background: var(--orange);
+  font-family: "DM Sans", sans-serif;
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  padding: 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--orange-dark);
+}
+
